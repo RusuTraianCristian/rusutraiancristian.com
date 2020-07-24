@@ -1,0 +1,48 @@
+.nopointer {
+    cursor: inherit;
+    color: #cecece;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul li {
+    font-size: 18px;
+    font-family: monospace;
+    line-height: 22px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 4px;
+    padding: 2px 0;
+    cursor: pointer;
+    font-weight: 100;
+    user-select: none;
+    color: #a1a1a1;
+    text-transform: lowercase;
+}
+
+ul li span {
+    color: #cecece;
+}
+
+a {
+    text-decoration: none;
+    color: #a1a1a1;
+}
+
+ul li a:hover {
+    text-decoration: line-through;
+    text-decoration-color: #000;
+    color: #000;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+ul li a:target {
+    color: red;
+}

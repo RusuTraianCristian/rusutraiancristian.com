@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: serverless;
+    src: url('fonts/serverless.otf') format('otf'),
+         url('fonts/serverless.woff') format('woff'),
+         url('fonts/serverless.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: monospace;
+    font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: serverless;
+    text-transform: lowercase;
+    user-select: none;
+}
+
+.subtitle {
+    font-size: 16px;
+    text-align: center;
+    font-family: monospace;
+    line-height: 22px;
+    font-weight: 100;
+    user-select: none;
+    text-transform: lowercase;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: #fff;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 2ex;
+  -webkit-border-radius: 2ex;
 }
