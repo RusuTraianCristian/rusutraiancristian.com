@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './Connect.css';
-import Navigator from './Navigator';
+import Explore from './Explore';
 
 const Connect = () => {
     return (
@@ -8,9 +8,8 @@ const Connect = () => {
             <div id = "main">
                 <div className = "title">connect</div>
                 <div className = "subtitle">connect</div>
-                <Navigator />
-                update social profiles, put profiles here | linkedin, angel, github, stackoverflow, hashnode, codersrank, codepen, codesandbbox
             </div>
+            <Explore explore = "update social profiles, put profiles here | linkedin, angel, github, stackoverflow, hashnode, codersrank, codepen, codesandbbox"/>
         </Fragment>
     );
 }

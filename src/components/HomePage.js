@@ -1,16 +1,15 @@
 import React, { Fragment } from 'react';
 import './HomePage.css';
-import Navigator from './Navigator';
+import Explore from './Explore';
 
 const HomePage = () => {
     return (
         <Fragment>
             <div id = "main">
-                <div className = "title">Rusu Traian Cristian</div>
+                <div className = "logo"><span>Chris.</span></div>
                 <div className = "subtitle">software engineer, systems designer, aspiring founder</div>
-                <Navigator />
-                stuff about myself
             </div>
+            <Explore explore = "stuff about myself - homepage"/>
         </Fragment>
     );
 }

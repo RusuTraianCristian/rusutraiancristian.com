@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './Lab.css';
-import Navigator from './Navigator';
+import Explore from './Explore';
 
 const Lab = () => {
     return (
@@ -8,9 +8,8 @@ const Lab = () => {
             <div id = "main">
                 <div className = "title">lab</div>
                 <div className = "subtitle">lab</div>
-                <Navigator />
-                experiments and other stuff | 2-3 loaders with react lazy and suspense in codepen/codesandbox
             </div>
+            <Explore explore = "experiments and other stuff | 2-3 loaders with react lazy and suspense in codepen/codesandbox"/>
         </Fragment>
     );
 }

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './Skills.css';
-import Navigator from './Navigator';
+import Explore from './Explore';
 
 const Skills = () => {
     return (
@@ -8,9 +8,8 @@ const Skills = () => {
             <div id = "main">
                 <div className = "title">skills</div>
                 <div className = "subtitle">skills</div>
-                <Navigator />
-                a list of my skills..
             </div>
+            <Explore explore = "a list of my skills.."/>
         </Fragment>
     );
 }

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './Projects.css';
-import Navigator from './Navigator';
+import Explore from './Explore';
 
 const Projects = () => {
     return (
@@ -8,9 +8,8 @@ const Projects = () => {
             <div id = "main">
                 <div className = "title">projects</div>
                 <div className = "subtitle">projects</div>
-                <Navigator />
-                projects with skills used, with links to github, with website link, update github repos from local
             </div>
+            <Explore explore = "projects with skills used, with links to github, with website link, update github repos from local"/>
         </Fragment>
     );
 }
