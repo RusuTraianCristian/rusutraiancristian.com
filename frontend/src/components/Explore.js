@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState, useRef } from 'react';
 import './Explore.css';
 
-const Explore = props => {
+const Explore = ({ explore }) => {
 
     const [message, setMessage] = useState('');
 
@@ -27,7 +27,7 @@ const Explore = props => {
     return (
         <Fragment>
             <div className = "subtitle blink" onClick = { () => scrollToRef(myRefpointer) }>{ message }</div>
-            <div className = "explore" ref = { myRefpointer }>{ props.explore }</div>
+            <div className = "explore" ref = { myRefpointer }>{ explore }</div>
         </Fragment>
     );
 }

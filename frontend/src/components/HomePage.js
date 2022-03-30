@@ -7,7 +7,7 @@ const HomePage = () => {
         <Fragment>
             <div id = "main">
                 <div className = "logo"><span>Chris.</span></div>
-                <div className = "subtitle">software engineer, systems designer, aspiring founder</div>
+                <div className = "subtitle">software engineer, devops, systems designer, aspiring founder</div>
             </div>
             <Explore explore = "stuff about myself - homepage"/>
         </Fragment>

@@ -1,0 +1,171 @@
+:root {
+    --glacier: #f0f0f0;
+    --purple-light: #7b4aee;
+    --purple-medium: #5830b4;
+    --purple-dark: #422488;
+    --sponsors-pink: #ea4aaa;
+    --link-blue-light: #4388dc;
+    --link-blue-dark: #1269d3;
+    --dark-primary: #18181b;
+    --dark-secondary: #19171c;
+}
+
+@font-face {
+    font-family: serverless;
+    src: url('fonts/serverless/serverless.otf') format('otf'),
+         url('fonts/serverless/serverless.woff') format('woff'),
+         url('fonts/serverless/serverless.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: ubuntu-bold;
+    src: url('fonts/ubuntu/Ubuntu-Bold.otf') format('otf'),
+         url('fonts/ubuntu/Ubuntu-Bold.woff') format('woff'),
+         url('fonts/ubuntu/Ubuntu-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: ubuntu-regular;
+    src: url('fonts/ubuntu/Ubuntu-Regular.otf') format('otf'),
+         url('fonts/ubuntu/Ubuntu-Regular.woff') format('woff'),
+         url('fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: ubuntu-medium;
+    src: url('fonts/ubuntu/Ubuntu-Medium.otf') format('otf'),
+         url('fonts/ubuntu/Ubuntu-Medium.woff') format('woff'),
+         url('fonts/ubuntu/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: ubuntu-light;
+    src: url('fonts/ubuntu/Ubuntu-Light.otf') format('otf'),
+         url('fonts/ubuntu/Ubuntu-Light.woff') format('woff'),
+         url('fonts/ubuntu/Ubuntu-Light.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #000;
+    font-family: monospace;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: var(--dark-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--glacier);
+    border: 3px solid var(--dark-secondary);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+#main {
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    z-index: 1;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: capitalize;
+    user-select: none;
+    color: #6d6d6d;
+    font-weight: 100;
+}
+
+.logo span {
+    color: #2d2d2d;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: serverless;
+    text-transform: lowercase;
+    user-select: none;
+}
+
+.subtitle {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    line-height: 22px;
+    font-weight: 100;
+    user-select: none;
+    text-transform: lowercase;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        color: var(--dark);
+    }
+    50% {
+        color: var(--glacier);
+    }
+    100% {
+        color: var(--dark);
+    }
+}
+
+@keyframes blink {
+    0% {
+        color: var(--dark);
+    }
+    50% {
+        color: var(--glacier);
+    }
+    100% {
+        color: var(--dark);
+    }
+}
+
+.blink {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink;
+    -webkit-animation-timing-function: ease-in-out;
+
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    animation-timing-function: ease-in-out;
+
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    background: #fff;
+}

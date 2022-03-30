@@ -13,6 +13,7 @@ import Contact from './components/Contact';
 import Support from './components/Support';
 import NotFound from './components/NotFound';
 import Navigator from './components/Navigator';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -76,6 +77,7 @@ const App = () => {
                     <Route path = "/support" component = { Support }></Route>
                     <Route component = { NotFound }></Route>
                 </Switch>
+                <Footer />
             </Router>
         </Fragment>
     );

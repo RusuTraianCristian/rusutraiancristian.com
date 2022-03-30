@@ -1,0 +1,17 @@
+footer {
+    height: 120px;
+    line-height: 120px;
+    background: var(--dark);
+    color: var(--glacier);
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    font-size: 14px;
+    user-select: none;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}

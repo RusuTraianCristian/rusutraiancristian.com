@@ -3,6 +3,22 @@
     color: #cecece;
 }
 
+header {
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    transition: .45s;
+    overflow: hidden;
+    /* -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,.05), 0 10px 30px 0 rgba(0,0,0,.10);
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.05), 0 10px 30px 0 rgba(0,0,0,.10);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.05), 0 10px 30px 0 rgba(0,0,0,.10); */
+}
+
 ul {
     padding: 0;
     margin: 0;
@@ -33,16 +49,12 @@ a {
     color: #a1a1a1;
 }
 
-ul li a:hover {
+ul li a:hover, .is-active {
     text-decoration: line-through;
-    text-decoration-color: #000;
-    color: #000;
+    text-decoration-color: var(--dark);
+    color: var(--dark);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
-
-ul li a:target {
-    color: red;
 }
